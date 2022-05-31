@@ -1,5 +1,7 @@
 import './App.css';
 import styled from 'styled-components'
+import RawInputArea from './Components/RawInputArea';
+import MarkdownSanitazed from './Components/MarkdownSanitazed';
 
 const AppContainer = styled.div`
   width:100%;
@@ -27,7 +29,8 @@ function App() {
     <AppContainer>
       <Title>Markdown editor</Title>
       <EditorContainer>
-        
+        <RawInputArea/>
+        <MarkdownSanitazed/>
       </EditorContainer>
     </AppContainer>
   );
